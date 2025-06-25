@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você prefere ter vários amores na vida, ou se relacionar com a mesma mulher para sempre",
+        enunciado: "",
         alternativas: [
             {
-                texto: "ter vários amores",
-                afirmacao: "Você é uma pessoa de personalidade livre e quer viver várias aventuras "
+                texto: "",
+                afirmacao: " "
             },
             {
-                texto: "UM único amor",
-                afirmacao: "Você não ve graça em viver apenas em prol dos desejos carnais e deseja algo duradouro"
+                texto: "",
+                afirmacao: ""
             }
         ]
     },

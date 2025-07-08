@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "",
+        enunciado: "Você está em casa navegando na internet quando vê uma notícia sobre o avanço da Inteligência Artificial em diversas áreas. O que você faz em seguida?",
         alternativas: [
             {
-                texto: "",
-                afirmacao: " "
+                texto: "Fica curioso(a) e começa a pesquisar vídeos e artigos sobre o assunto.",
+                afirmacao: "Sua curiosidade foi despertada, e você começou uma jornada de descobertas sobre IA."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Acha o tema interessante, mas decide continuar jogando ou vendo séries.",
+                afirmacao: "Você achou interessante, mas ainda não se sentiu motivado(a) a se aprofundar no tema naquele momento."
             }
         ]
     },
@@ -69,9 +69,8 @@ const perguntas = [
                 afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -88,8 +87,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -106,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
+    textoResultado.textContent = historiaFinal + "Agora, olhando para trás, você percebe como cada escolha moldou seu entendimento e envolvimento com a Inteligência Artificial. O futuro ainda está sendo escrito — e suas decisões continuam sendo parte dele.";
     caixaAlternativas.textContent = "";
 }
 
